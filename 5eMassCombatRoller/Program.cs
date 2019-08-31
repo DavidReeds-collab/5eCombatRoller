@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace _5eMassCombatRoller
 {
@@ -10,7 +10,7 @@ namespace _5eMassCombatRoller
             Console.WriteLine("input first army name;");
             string army1Name = Console.ReadLine();
             int army1Size = 0;
-            while (army1Size == 0)
+            while (army1Size <= 0)
             {
                 Console.WriteLine("input first army size;");
                 if (Int32.TryParse(Console.ReadLine(), out army1Size))
@@ -24,8 +24,8 @@ namespace _5eMassCombatRoller
 
             }
 
-            int army1CR = 0;
-            while (army1CR == 0)
+            int army1CR = -1;
+            while (army1CR <= -1)
             {
                 Console.WriteLine("input first army CR;");
                 if (Int32.TryParse(Console.ReadLine(), out army1CR))
@@ -39,11 +39,26 @@ namespace _5eMassCombatRoller
 
             }
 
+            int army1Morale = 0;
+            while (army1Morale == 0)
+            {
+                Console.WriteLine("input first army morale;");
+                if (Int32.TryParse(Console.ReadLine(), out army1Morale))
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("input first army morale;");
+                }
+
+            }
+
             Console.WriteLine("input second army name;");
             string army2Name = Console.ReadLine();
 
             int army2Size = 0;
-            while (army2Size == 0)
+            while (army2Size <= 0)
             {
                 Console.WriteLine("input second army size;");
                 if (Int32.TryParse(Console.ReadLine(), out army2Size))
@@ -57,8 +72,8 @@ namespace _5eMassCombatRoller
 
             }
 
-            int army2CR = 0;
-            while (army2CR == 0)
+            int army2CR = -1;
+            while (army2CR <= -1)
             {
                 Console.WriteLine("input second army CR;");
                 if (Int32.TryParse(Console.ReadLine(), out army2CR))
@@ -68,6 +83,21 @@ namespace _5eMassCombatRoller
                 else
                 {
                     Console.WriteLine("input second army CR;");
+                }
+
+            }
+
+            int army2Morale = 0;
+            while (army2Morale == 0)
+            {
+                Console.WriteLine("input second army morale;");
+                if (Int32.TryParse(Console.ReadLine(), out army2Morale))
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("input second army morale;");
                 }
 
             }
@@ -87,8 +117,8 @@ namespace _5eMassCombatRoller
 
             }
 
-            Army army1 = new Army(army1Name, army1Size, army1CR, true);
-            Army army2 = new Army(army2Name, army2Size, army2CR, false);
+            Army army1 = new Army(army1Name, army1Size, army1CR, true, army1Morale);
+            Army army2 = new Army(army2Name, army2Size, army2CR, false, army2Morale);
 
             for (int i = 0; i < simulations; i++)
             {
@@ -129,7 +159,7 @@ namespace _5eMassCombatRoller
 
         static bool CombatContinue(Army army)
         {
-            bool Continue = (army.Moralle > -2 && army.Size > 0); ;
+            bool Continue = (army.Moralle > 0 && army.Size > 0); ;
 
             if (!Continue)
             {
@@ -214,23 +244,25 @@ namespace _5eMassCombatRoller
 
             public int AC { get { return 10 + Size + CR; } }
 
-            public Army(string name, int size, int cr, bool attacker)
+            public Army(string name, int size, int cr, bool attacker, int morale)
             {
                 Name = name;
                 Size = size;
                 CR = cr;
-                Moralle = 0;
+                Moralle = morale;
                 Attacker = attacker;
 
                 resetSize = size;
+                resetMorale = morale;
 
             }
 
             private int resetSize;
+            private int resetMorale;
 
             public void Reset()
             {
-                Moralle = 0;
+                Moralle = resetMorale;
                 Size = resetSize;
             }
         }

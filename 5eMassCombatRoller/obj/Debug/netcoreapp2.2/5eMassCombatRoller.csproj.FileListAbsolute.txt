@@ -1,0 +1,11 @@
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\bin\Debug\netcoreapp2.2\5eMassCombatRoller.deps.json
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\bin\Debug\netcoreapp2.2\5eMassCombatRoller.runtimeconfig.json
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\bin\Debug\netcoreapp2.2\5eMassCombatRoller.runtimeconfig.dev.json
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\bin\Debug\netcoreapp2.2\5eMassCombatRoller.dll
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\bin\Debug\netcoreapp2.2\5eMassCombatRoller.pdb
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\obj\Debug\netcoreapp2.2\5eMassCombatRoller.csprojAssemblyReference.cache
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\obj\Debug\netcoreapp2.2\5eMassCombatRoller.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\obj\Debug\netcoreapp2.2\5eMassCombatRoller.AssemblyInfoInputs.cache
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\obj\Debug\netcoreapp2.2\5eMassCombatRoller.AssemblyInfo.cs
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\obj\Debug\netcoreapp2.2\5eMassCombatRoller.dll
+C:\Users\marti\source\repos\5eMassCombatRollerSolution\5eMassCombatRoller\obj\Debug\netcoreapp2.2\5eMassCombatRoller.pdb
